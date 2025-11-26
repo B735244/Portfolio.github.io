@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>손보금 Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <base href="/Portfolio.github.io/"> 
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="asset/css/index.css" />
+
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div>
+        <div class="sidebar-header">
+          <div class="sidebar-name">SON BOGEUM</div>
+          <div class="sidebar-role">FULLSTACK DEVELOPER</div>
+        </div>
+        <ul class="sidebar-nav" style="padding-left:0;">
+          <li><a class="sidebar-link" href="#about">About</a></li>
+          <li><a class="sidebar-link" href="#skills">기술 스택</a></li>
+          <li><a class="sidebar-link" href="#projects">프로젝트</a></li>
+          <li><a class="sidebar-link" href="#experience">활동 및 자격증</a></li>
+          <li><a class="sidebar-link" href="#education">교육</a></li>
+          <li><a class="sidebar-link" href="#blog">Blog</a></li>
+          <li><a class="sidebar-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-footer">
+        © 2025 SON BOGEUM<br />
+        Portfolio 
+      </div>
+    </aside>
+
+    <header class="mobile-header">
+      <div class="mobile-title">SON BOGEUM</div>
+      <div class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span><span></span><span></span>
+      </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav">
+      <a class="mobile-nav-link" href="#about">About</a>
+      <a class="mobile-nav-link" href="#skills">기술 스택</a>
+      <a class="mobile-nav-link" href="#projects">프로젝트</a>
+      <a class="mobile-nav-link" href="#experience">활동 및 자격증</a>
+      <a class="mobile-nav-link" href="#education">교육</a>
+      <a class="mobile-nav-link" href="#blog">Blog</a>
+      <a class="mobile-nav-link" href="#contact">Contact</a>
+    </nav>
+
+    <main class="main">
+      <section class="section" id="about">
+        <div class="section-label">About</div>
+        <h2 class="section-title">Fullstack Developer</h2>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-avatar"></div>
+            <div class="about-meta">
+              <div class="about-meta-title">손보금</div>
+              <div class="about-meta-sub">Fullstack / Spring Boot · React · iOS</div>
+              <div class="about-meta-sub">Based in Korea · 관심 분야: 펫테크, Database 취미, 뭐 소개 글 더 적기</div>
+            </div>
+          </div>
+
+          <div class="about-text section-body">
+            <p class="about-highlight">
+              맡은 일을 반드시 해내는 성실한 개발자,<br/>
+              끈기와 인내심을 겸비한 개발자
+            </p>
+
+            <p>
+              반려동물 장례 · 심리상담 · 추모 굿즈를 통합한
+              <strong>Last Page Project</strong>를 중심으로
+              웹 서비스 전체 구조를 설계하고 구현해 온 개발자입니다.
+            </p>
+            <p>
+              Spring Boot, JPA, MySQL을 기반으로 한 백엔드와
+              HTML/CSS/JavaScript, React를 활용한 프론트엔드를 함께 다루며,
+              실제 예약/결제/관리자 기능까지 연결되는 흐름을 경험했습니다.
+            </p>
+            <p>
+              새 기능을 빠르게 실험하고, 코드를 정리하며,
+              사용자 경험과 사용자의 시각을 우선시하여 개발하는 것에 중점을 둡니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-label">기술 스택</div>
+        <h2 class="section-title">Stack &amp; Tools</h2>
+
+        <div class="skills-grid">
+          <!-- Backend -->
+          <div class="skill-card">
+            <div class="skill-title">Backend</div>
+            <div class="section-body">
+              Java · Spring Boot · Spring Security · JPA/Hibernate ·
+              MySQL · REST API 설계
+            </div>
+            <div class="pill-row">
+              <img class="stack-badge" src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+              <img class="stack-badge" src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot" />
+              <img class="stack-badge" src="https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white" alt="Spring Security" />
+              <img class="stack-badge" src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white" alt="Hibernate" />
+              <img class="stack-badge" src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-card">
+            <div class="skill-title">Frontend</div>
+            <div class="section-body">
+              HTML5 · CSS3 · JavaScript(ES6+) · React · 반응형 UI · 멀티 스텝 폼 구현
+            </div>
+            <div class="pill-row">
+              <img class="stack-badge" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+              <img class="stack-badge" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+              <img class="stack-badge" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+              <img class="stack-badge" src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+              <img class="stack-badge" src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" />
+            </div>
+          </div>
+
+          <!-- Others -->
+          <div class="skill-card">
+            <div class="skill-title">Others</div>
+            <div class="section-body">
+              Git &amp; GitHub · Docker · KakaoPay / NaverPay 연동 · OAuth2 · NGINX · Jira · AWS · Jenkins
+            </div>
+            <div class="pill-row">
+              <img class="stack-badge" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+              <img class="stack-badge" src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+              <img class="stack-badge" src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+              <img class="stack-badge" src="https://img.shields.io/badge/KakaoPay-FFCD00?style=for-the-badge&logo=kakaotalk&logoColor=black" alt="KakaoPay" />
+              <img class="stack-badge" src="https://img.shields.io/badge/OAuth2-3A3A3A?style=for-the-badge&logo=auth0&logoColor=white" alt="OAuth2" />
+              <img class="stack-badge" src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx" />
+              <img class="stack-badge" src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white" alt="Jira" />
+              <img class="stack-badge" src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS" />
+              <img class="stack-badge" src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins" />
+            </div>
+          </div>
+
+          
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-label">프로젝트</div>
+        <h2 class="section-title">Selected Works</h2>
+
+        <div class="projects-grid">
+          <article class="project-card" onclick="location.href='project-lastpage.html'" style="cursor:pointer;">
+            <div class="project-thumb"></div>
+            <div class="project-meta">
+              SINCE 2024.01 | Personal Service
+            </div>
+            <div class="project-title">Last Page Project</div>
+            <div class="project-desc">
+              반려동물 장례 예약 · 심리상담 예약 · 추모 굿즈 주문을 통합한
+              웹 플랫폼입니다. 회원가입/로그인부터 예약, 결제, QnA까지
+              실제 서비스 흐름을 설계하고 구현했습니다.
+            </div>
+            <div class="project-tags">
+              Spring Boot · JPA · Thymeleaf · KakaoPay · NaverPay ·
+              Admin Dashboard
+            </div>
+          </article>
+
+          <article class="project-card" onclick="location.href='project-detail.html'" style="cursor:pointer;">
+            <div class="project-thumb"></div>
+            <div class="project-meta">
+              PROTOTYPE | iOS
+            </div>
+            <div class="project-title">Local Food Finder</div>
+            <div class="project-desc">
+              Swift 기반 맛집 추천 앱 프로토타입으로, 지도 기반 매장 탐색,
+              카테고리 필터, 즐겨찾기 기능을 구현한 프로젝트입니다.
+            </div>
+            <div class="project-tags">
+              Swift · MapKit · CoreLocation · UX Prototype
+            </div>
+          </article>
+
+          <article class="project-card" onclick="location.href='project-detail.html'" style="cursor:pointer;">
+            <div class="project-thumb"></div>
+            <div class="project-meta">
+              SIDE PROJECT | Web
+            </div>
+            <div class="project-title">Support & QnA Center</div>
+            <div class="project-desc">
+              고객센터 QnA · FAQ · 관리자 답변 기능을 갖춘 모듈로,
+              이미지 업로드와 비공개 문의, 관리자 필터링 등을 포함합니다.
+            </div>
+            <div class="project-tags">
+              Spring MVC · JPA · JS 모달 UI · File Upload
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-label">활동</div>
+        <h2 class="section-title">Practical Works</h2>
+
+        <div class="timeline-list">
+          <div class="timeline-item">
+            <div class="timeline-year">2024 - 2025</div>
+            <div class="timeline-card">
+              <div class="timeline-title">Last Page Project 개발</div>
+              <div class="timeline-sub">
+                반려동물 장례 · 상담 · 굿즈 통합 웹 서비스
+              </div>
+              <div class="timeline-desc">
+                서비스 기획부터 DB 설계, 백엔드 API, 프론트엔드 구현까지
+                전 과정을 경험했습니다. 결제 연동, 예약 CRUD, 관리자 대시보드 등
+                실제 서비스에서 필요한 기능을 직접 구현했습니다.
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2023 - 2024</div>
+            <div class="timeline-card">
+              <div class="timeline-title">개인 토이 프로젝트 다수</div>
+              <div class="timeline-sub">
+                게시판 · 로그인 · REST API 실습
+              </div>
+              <div class="timeline-desc">
+                CRUD 중심의 게시판, 로그인/회원가입 기능, Spring Data JPA
+                활용, React 기반 프론트 실습 등 다양한 토이 프로젝트를
+                통해 기본기를 쌓았습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+                  <section class="section" id="education">
+        <div class="section-label">교육 및 자격증</div>
+        <h2 class="section-title">Learning Journey</h2>
+
+        <div class="timeline-list">
+          <div class="timeline-item">
+            <div class="timeline-year">2017 - 2022</div>
+            <div class="timeline-card">
+              <div class="timeline-title">홍익대학교 컴퓨터공학부 학사</div>
+              <div class="timeline-desc">
+                대학 생활 동안 자료구조, 알고리즘, 운영체제, 데이터베이스 등 핵심 CS 과목을 수강하며 개발 기초를 다졌습니다.
+                여러 팀 프로젝트와 과제를 통해 실제 문제 해결 능력을 익혔으며, 웹 개발에 흥미를 느껴 관련 기술들을 꾸준히 학습해 왔습니다.
+                이를 기반으로 이후의 개인 프로젝트와 서비스 개발 역량을 확장하는 기반을 마련했습니다.
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-card">
+              <div class="timeline-title">정보처리기사 자격증 취득</div>
+              <div class="timeline-desc">
+                정보처리기사 필기와 실기를 준비하며 소프트웨어 공학, 데이터베이스, 자료구조 등의 핵심 개념을 체계적으로 정리하고 이해했습니다.
+                이 과정을 통해 실제 개발에 필요한 기본 지식과 문제 해결 능력을 한층 강화할 수 있었습니다.
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-card">
+              <div class="timeline-title">SQLD 자격증 취득</div>
+              <div class="timeline-desc">
+                데이터 모델링과 SQL 활용 능력을 학습하며 데이터베이스 구조와 운용 방식에 대한 이해를 높였습니다.
+                이를 통해 서비스 개발 과정에서 데이터 처리와 쿼리 최적화 능력을 강화했습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="blog">
+        <div class="section-label">Self-improvement</div>
+        <h2 class="section-title">Blog & Content</h2>
+
+        <div class="blog-grid">
+          <article class="blog-card" onclick="location.href='blog-detail.html'" style="cursor:pointer;">
+            <div class="blog-thumb"></div>
+            <div class="blog-meta">
+              SINCE 2024.01 | DEV BLOG
+            </div>
+            <div class="blog-title">개발 기록 블로그</div>
+            <div class="blog-desc">
+              에러 해결 과정, 스프링/리액트 정리, 프로젝트 회고 등을
+              꾸준히 기록하며 학습 내용을 정리하고 있습니다.
+            </div>
+          </article>
+
+          <article class="blog-card" onclick="location.href='blog-detail.html'" style="cursor:pointer;">
+            <div class="blog-thumb"></div>
+            <div class="blog-meta">
+              VIDEO | STUDY
+            </div>
+            <div class="blog-title">학습 영상 정리</div>
+            <div class="blog-desc">
+              직접 만든 데모 화면을 캡처하거나, 기능 흐름을 설명하는 영상을
+              촬영해 복습용으로 활용하고 있습니다.
+            </div>
+          </article>
+
+          <article class="blog-card" onclick="location.href='blog-detail.html'" style="cursor:pointer;">
+            <div class="blog-thumb"></div>
+            <div class="blog-meta">
+              COMMUNITY | EVENTS
+            </div>
+            <div class="blog-title">개발 행사/스터디 참여</div>
+            <div class="blog-desc">
+              온·오프라인 스터디 및 커뮤니티에 참여해 다른 개발자들과
+              경험을 나누고, 동기부여를 얻고 있습니다.
+            </div>
+          </article>
+        </div>
+      </section>
+
+                  <section class="section" id="contact">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">Get in Touch</h2>
+
+        <div class="contact-card">
+          <div class="contact-row">
+            <span class="contact-label">Email</span>
+            <a href="mailto:dig05252@gmail.com">dig05252@gmail.com</a>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/B735244" target="_blank">https://github.com/B735244</a>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Blog</span>
+            <a href="https://www.notion.so/BIGDATA-UI-224ec1c69c8280a9b6ffe4ab01e9de8a?source=copy_link" target="_blank">https://www.notion.so/BIGDATA-UI</a>
+          </div>
+
+          <div class="contact-actions">
+            <button class="btn-primary">이메일 보내기</button>
+            <button class="btn-outline">이력서 다운로드</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="cat-strip">
+        <div class="cat-walk"></div>
+      </div>
+    </main>
+  </div>
+  <script src="/asset/js/index.js"></script>
+</body>
+</html>
