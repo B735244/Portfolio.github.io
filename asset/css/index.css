@@ -5,7 +5,7 @@
       --beige-soft: #f3e9dd;
       --white: #ffffff;
       --text-main: #111827;
-      --radius: 5px;
+      --radius: 8px;
     }
 
     * {
@@ -37,12 +37,9 @@
     }
 
     /* ----- 사이드바 ----- */
-    .sidebar {
-      display:flex;
-      width: 260px;
-      background: var(--white);
+    .sidebar { display:flex; width:260px; background: var(--navy);
       border-right: 1px solid rgba(15, 23, 42, 0.08);
-      padding: 32px 26px;
+      padding: 28px 26px;
       position: fixed;
       left: 0;
       top: 0;
@@ -57,20 +54,11 @@
       margin-bottom: 40px;
     }
 
-    .sidebar-name {
-      font-size: 1.6rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      color: var(--navy);
+    .sidebar-name { font-size:1.6rem; font-weight:700; letter-spacing:0.12em; color: var(--white);
       line-height: 1.2;
     }
 
-    .sidebar-role {
-      margin-top: 6px;
-      font-size: 0.8rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--navy-soft);
+    .sidebar-role { margin-top:6px; font-size:0.8rem; letter-spacing:0.22em; text-transform:uppercase; color:#ffffff;
     }
 
     .sidebar-nav {
@@ -82,13 +70,9 @@
       margin-bottom: 8px;
     }
 
-    .sidebar-link {
-      display: block;
-      padding: 8px 10px 8px 14px;
-      font-size: 0.9rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--navy-soft);
+
+
+    .sidebar-link { display:block; padding:8px 8px 8px 12px; font-size:0.9rem; letter-spacing:0.14em; text-transform:uppercase; color:#ffffff;
       border-radius: var(--radius);
       position: relative;
       transition: background 0.2s, color 0.2s;
@@ -108,16 +92,9 @@
       transition: height 0.2s;
     }
 
-    .sidebar-link:hover {
-      background: var(--beige-soft);
-      color: var(--navy);
-    }
+    .sidebar-link:hover { background: var(--navy-soft); color: var(--white); }
 
-    .sidebar-link.active {
-      background: var(--beige-soft);
-      color: var(--navy);
-      font-weight: 600;
-    }
+    .sidebar-link.active { background: var(--navy-soft); color: var(--white); font-weight:600; }
 
     .sidebar-link.active::before {
       height: 70%;
@@ -162,6 +139,18 @@
     }
 
     /* ====================== ABOUT ====================== */
+    .about-highlight {
+      font-size:1.15rem;
+      font-weight:700;
+      color:var(--navy);
+      background: linear-gradient(90deg, #dce2f1 0%, #f0f3fa 100%);
+      padding:14px 16px;
+      border-left:6px solid var(--navy);
+      border-radius:4px;
+      line-height:1.55;
+      margin-bottom:18px;
+    }
+
     .about-grid {
       display: grid;
       grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr);
@@ -185,15 +174,18 @@
       border-radius: var(--radius);
       padding: 20px 22px;
       display: flex;
+      flex-direction: column; /* 아바타 위 - 텍스트 아래 */
       align-items: center;
-      gap: 16px;
+      gap: 14px;
+      text-align: center;
     }
 
     .about-avatar {
-      width: 72px;
-      height: 72px;
+      width: 90px;
+      height: 90px;
       border-radius: 50%;
-      background: var(--navy);
+      background: url('/asset/img/bodong.jpeg') center/cover;
+      flex-shrink: 0;
     }
 
     .about-meta-title {
@@ -222,9 +214,10 @@
     }
 
     .skill-title {
-      font-weight: 600;
+      font-weight: 670;
       color: var(--navy);
       margin-bottom: 8px;
+      border-bottom:1px solid var(--navy);
     }
 
     .pill-row {
@@ -236,9 +229,29 @@
 
     .pill {
       font-size: 0.75rem;
-      background: var(--beige-soft);
-      padding: 4px 8px;
+      padding: 6px 10px;
       border-radius: 999px;
+      font-weight: 600;
+      color: #fff;
+      cursor: default;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      display: inline-block;
+    }
+
+    /* 알록달록 색상 자동 배정 */
+    .pill:nth-child(1) { background: #ff6b6b; }
+    .pill:nth-child(2) { background: #4dabf7; }
+    .pill:nth-child(3) { background: #51cf66; }
+    .pill:nth-child(4) { background: #845ef7; }
+    .pill:nth-child(5) { background: #ffa94d; }
+    .pill:nth-child(6) { background: #f06595; }
+    .pill:nth-child(7) { background: #20c997; }
+    .pill:nth-child(8) { background: #339af0; }
+
+    /* hover 효과 */
+    .pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     }
 
     /* ====================== PROJECTS ====================== */
@@ -267,6 +280,8 @@
         rgba(31, 41, 55, 0.12),
         rgba(75, 85, 99, 0.16)
       );
+      /* 이미지 경로가 외부 CSS에 있으면 여기서 로컬 경로로 수정해야 합니다. */
+      /* background: url('asset/images/project1.jpg') center/cover; */ 
       margin-bottom: 10px;
     }
 
@@ -326,9 +341,10 @@
     }
 
     .timeline-title {
-      font-weight: 600;
+      font-weight: 670;
       color: var(--navy);
       margin-bottom: 4px;
+      border-bottom: 1px solid var(--navy);
     }
 
     .timeline-sub {
@@ -365,6 +381,8 @@
         rgba(31, 41, 55, 0.12),
         rgba(243, 233, 221, 0.9)
       );
+      /* 이미지 경로가 외부 CSS에 있으면 여기서 로컬 경로로 수정해야 합니다. */
+      /* background: url('asset/images/blog.jpg') center/cover; */
       margin-bottom: 10px;
     }
 
@@ -377,9 +395,10 @@
     }
 
     .blog-title {
-      font-weight: 600;
+      font-weight: 670;
       color: var(--navy);
       margin-bottom: 6px;
+      
     }
 
     .blog-desc {
@@ -389,7 +408,7 @@
 
     /* ====================== CONTACT ====================== */
     .contact-card {
-      max-width: 100svw;
+      max-width: 100%;
       background: var(--white);
       border-radius: var(--radius);
       padding: 20px 22px;
@@ -434,133 +453,130 @@
       cursor: pointer;
     }
 
-    /* ====================== 모바일 레이아웃 ====================== */
-   
-    .mobile-header { display: none; }
+/* ====================== CAT WALK STRIP ====================== */
+    .cat-strip {
+      width: 100%;
+      height: 90px;
+      background: var(--navy);
+      position: relative;
+      margin-top: 40px;
+      overflow: hidden;
+      border-radius: var(--radius);
+    }
+
+    .cat-walk {
+      position: absolute;
+      bottom: 8px;
+      left: -120px;
+      width: 80px;
+      height: 64px;
+      background: url('/asset/img/cat-walk.png') center/contain no-repeat;
+      animation: cat-walk 14s linear infinite;
+    }
+
+    @keyframes cat-walk {
+      0% { left: -120px; }
+      100% { left: calc(100% + 120px); }
+    }
+
+/* ====================== 모바일 레이아웃 ====================== */
+
+/* 기본값: 데스크탑에서는 모바일 헤더 숨김 */
+.mobile-header { display: none; }
 .mobile-nav { display: none; }
 
+/* 모바일에서만 모바일 헤더 표시 & 사이드바 숨김 */
+@media (max-width: 900px) {
+  .sidebar { display: none; }
+  .main { margin-left: 0; width: 100%; padding: 80px 20px; }
 
-    @media (max-width: 900px) {
-      body {
-        display: block;
-      }
+  .mobile-header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: var(--navy);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.2);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    z-index: 1000;
+  }
 
-      .sidebar {
-        display: none;
-      }
+  .mobile-title {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
 
-      .main {
-        margin-left: 0;
-        width: 100%;
-        padding: 80px 18px 60px;
-      }
+  .mobile-menu-btn {
+    width: 26px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+  }
 
-      .section {
-        margin-bottom: 80px;
-      }
+  .mobile-menu-btn span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 999px;
+    transition: transform 0.2s, top 0.2s, opacity 0.2s;
+  }
 
-      .about-grid {
-        grid-template-columns: 1fr;
-      }
+  .mobile-menu-btn span:nth-child(1) { top: 0; }
+  .mobile-menu-btn span:nth-child(2) { top: 9px; }
+  .mobile-menu-btn span:nth-child(3) { top: 18px; }
 
-      .timeline-item {
-        grid-template-columns: minmax(0, 1fr);
-      }
+  .mobile-menu-btn.active span:nth-child(1) {
+    top: 9px;
+    transform: rotate(45deg);
+  }
 
-      /* 모바일 상단 헤더 + 메뉴 */
-      .mobile-header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 60px;
-        background: var(--white);
-        border-bottom: 1px solid rgba(15, 23, 42, 0.08);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 16px;
-        z-index: 1000;
-      }
+  .mobile-menu-btn.active span:nth-child(2) {
+    opacity: 0;
+  }
 
-      .mobile-title {
-        font-size: 1rem;
-        font-weight: 600;
-        letter-spacing: 0.12em;
-        color: var(--navy);
-        text-transform: uppercase;
-      }
+  .mobile-menu-btn.active span:nth-child(3) {
+    top: 9px;
+    transform: rotate(-45deg);
+  }
 
-      .mobile-menu-btn {
-        width: 26px;
-        height: 20px;
-        position: relative;
-        cursor: pointer;
-      }
+  .mobile-nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    display: none;
+    flex-direction: column;
+    padding: 10px 16px 12px;
+    z-index: 950;
+  }
 
-      .mobile-menu-btn span {
-        position: absolute;
-        left: 0;
-        right: 0;
-        height: 2px;
-        background: var(--navy);
-        border-radius: 999px;
-        transition: transform 0.2s, top 0.2s, opacity 0.2s;
-      }
+  .mobile-nav.open {
+    display: flex;
+  }
 
-      .mobile-menu-btn span:nth-child(1) {
-        top: 0;
-      }
+  .mobile-nav-link {
+    padding: 10px 6px;
+    font-size: 0.9rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 
-      .mobile-menu-btn span:nth-child(2) {
-        top: 9px;
-      }
+  .mobile-nav-link.active {
+    font-weight: 700;
+    color: #cbd5e1;
+  }
+}
 
-      .mobile-menu-btn span:nth-child(3) {
-        top: 18px;
-      }
-
-      .mobile-menu-btn.active span:nth-child(1) {
-        top: 9px;
-        transform: rotate(45deg);
-      }
-
-      .mobile-menu-btn.active span:nth-child(2) {
-        opacity: 0;
-      }
-
-      .mobile-menu-btn.active span:nth-child(3) {
-        top: 9px;
-        transform: rotate(-45deg);
-      }
-
-      .mobile-nav {
-        position: fixed;
-        top: 60px;
-        left: 0;
-        right: 0;
-        background: var(--white);
-        border-bottom: 1px solid rgba(15, 23, 42, 0.08);
-        display: none;
-        flex-direction: column;
-        padding: 8px 12px 10px;
-        z-index: 950;
-      }
-
-      .mobile-nav.open {
-        display: flex;
-      }
-
-      .mobile-nav-link {
-        padding: 8px 4px;
-        font-size: 0.9rem;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: var(--navy-soft);
-      }
-
-      .mobile-nav-link.active {
-        color: var(--navy);
-        font-weight: 600;
-      }
-    }
+.stack-badge{transition:transform .15s ease, box-shadow .15s ease; cursor:pointer;}
+    .stack-badge:hover{transform:translateY(-3px); box-shadow:0 6px 12px rgba(0,0,0,0.2);} 
