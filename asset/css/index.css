@@ -181,13 +181,19 @@
     }
 
     .about-avatar {
-      width: 90px;
-      height: 90px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       background: url('/asset/img/bodong.jpeg') center/cover;
       flex-shrink: 0;
+      transition: transform 0.2s ease, box-shadow 0.15s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
+    .about-avatar:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
     .about-meta-title {
       font-weight: 600;
       margin-bottom: 4px;

@@ -12,7 +12,7 @@
     const sidebarLinks = Array.from(document.querySelectorAll(".sidebar-link"));
     const mobileLinks  = Array.from(document.querySelectorAll(".mobile-nav-link"));
 
-    // ✅ 모바일 햄버거/내비 요소를 최상단에서 캐싱 (클릭 시 참조 오류 방지)
+    //  모바일 햄버거/내비 요소를 최상단에서 캐싱 (클릭 시 참조 오류 방지)
     const mobileMenuBtn = document.getElementById("mobileMenuBtn");
     const mobileNav     = document.getElementById("mobileNav");
 
